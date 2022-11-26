@@ -2,7 +2,8 @@
 
 -nome: Ariel
 -nome: Luan
--nome:
+-nome: Guilherme
+-nome: Victor
 
 # Desafio Projeto Integrador Angular
 

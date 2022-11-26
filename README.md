@@ -1,3 +1,8 @@
+# Teste de fluxo git
+-nome: Ariel
+-nome:
+-nome:
+
 # Desafio Projeto Integrador Angular
 
 *Visando melhorar de seus associados, como Farmarcas iremos desenvolver um sistema chamado Radar, onde o seu objetivo é gerenciar o Fluxo de caixa do lojista fazendo com que o mesmo tenha a possibilidade de fazer o gerenciamento do fluxo de entrada e saída do seu negócio*

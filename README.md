@@ -1,9 +1,10 @@
 # Teste de fluxo git
 
--nome: Ariel
--nome: Luan
--nome: Guilherme
--nome: Victor
+-nome: Ariel Rodrigues
+-nome: Guilherme Bonilha
+-nome: Luan Fonseca
+-nome: Sarah Cardoso
+-nome: Victor Pinheiro
 
 # Desafio Projeto Integrador Angular
 

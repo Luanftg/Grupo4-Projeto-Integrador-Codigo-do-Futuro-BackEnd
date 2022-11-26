@@ -1,11 +1,12 @@
 # Teste de fluxo git
+
 -nome: Ariel
--nome:
+-nome: Guilherme
 -nome:
 
 # Desafio Projeto Integrador Angular
 
-*Visando melhorar de seus associados, como Farmarcas iremos desenvolver um sistema chamado Radar, onde o seu objetivo é gerenciar o Fluxo de caixa do lojista fazendo com que o mesmo tenha a possibilidade de fazer o gerenciamento do fluxo de entrada e saída do seu negócio*
+_Visando melhorar de seus associados, como Farmarcas iremos desenvolver um sistema chamado Radar, onde o seu objetivo é gerenciar o Fluxo de caixa do lojista fazendo com que o mesmo tenha a possibilidade de fazer o gerenciamento do fluxo de entrada e saída do seu negócio_
 
 **O sistema será desenvolvido em Angular com as seguintes funcionalidades.**
 
@@ -27,7 +28,7 @@
 ## SUGESTÃO DE ORGANIZAÇÃO DO PROJETO
 
 - Elaboração do kanban com definição dos entregáveis
-- Elaboração do kanban (sugestão de utilização: Trello, Jira, etc) 
+- Elaboração do kanban (sugestão de utilização: Trello, Jira, etc)
 - Criação do backlog
 - Detalhamento descritivo das tarefas da squad dentro dos seus cards (e não apenas com títulos genéricos no card)
 - Formatação do kanban padrão "to do, doing, done"

@@ -44,7 +44,6 @@ static async create(client) {
         const  objectLiteral = {...client};
         clientList.push(objectLiteral);
     }
-    //const content = JSON.stringify(clientList);
     User.saveJsonLocal(clientList);
 }
 
@@ -52,9 +51,7 @@ static async getList() {
     var users =[];
     try {
         const data = fs.readFileSync('db/clientes.json','utf8');
-        console.log(data);
         users = JSON.parse(data);
-        console.log(users);
     } catch (err) {
         console.log(err);
     }
@@ -89,7 +86,6 @@ static async delete(id){
             newList.push(clienteDb)
         }
     }
-
     User.saveJsonLocal(newList);
 }
 }

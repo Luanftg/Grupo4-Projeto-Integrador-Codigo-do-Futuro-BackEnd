@@ -12,11 +12,11 @@ module.exports = {
         res.status(201).send(client);
     },
     delete: (req, res, next) => {
-        User.apagarPorId(req.params.id)
+        User.delete(req.params.id)
         res.status(204).send("")
     },
     update: async (req, res, next) => {
-        let clienteDb = await User.buscaPorId(req.params.id)
+        let clienteDb = await User.findById(req.params.id)
         if(!clienteDb) return res.status(404).send({mensagem: "Cliente não encontrado"})
 
         const cliente = new User(req.body)

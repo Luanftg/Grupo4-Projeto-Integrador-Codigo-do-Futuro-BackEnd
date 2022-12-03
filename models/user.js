@@ -17,7 +17,6 @@ module.exports = class User {
     }
     
 static async create(client) {
-    var objectLiteral = {...client};
     const clientList = await this.getList();
     let exist = false;
     for (let i=0; i<clientList.length;i++) {
@@ -25,18 +24,18 @@ static async create(client) {
         if(clientDB.id == client.id) {   //atualiza o Client
             clientDB.name = client.name;
             clientDB.id = client.id;
-            clientDB.telefone = client.telefone
-            clientDB.email = client.email
-            clientDB.cpf = client.cpf
-            clientDB.cep = client.cep
-            clientDB.logradouro = client.logradouro
-            clientDB.numero = client.numero
-            clientDB.bairro = client.bairro
-            clientDB.cidade = client.cidade
-            clientDB.estado = client.estado
-            clientDB.complemento = client.complemento
+            clientDB.telefone = client.telefone;
+            clientDB.email = client.email;
+            clientDB.cpf = client.cpf;
+            clientDB.cep = client.cep;
+            clientDB.logradouro = client.logradouro;
+            clientDB.numero = client.numero;
+            clientDB.bairro = client.bairro;
+            clientDB.cidade = client.cidade;
+            clientDB.estado = client.estado;
+            clientDB.complemento = client.complemento;
             exist = true;
-            break
+            break;
         }
     }
     

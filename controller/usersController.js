@@ -2,9 +2,7 @@ const User = require('../models/user.js');
 
 module.exports = {
     index: async (req,res,next) => {
-        //let lista = [{id: 01,nome: "Luan"}, {id:2, nome: Lena}];
         const users = await User.getList();
-        //console.log(users);
         res.status(200).send(users);
     },
 
@@ -12,8 +10,23 @@ module.exports = {
         const client = new User(req.body);
         User.create(client);
         res.status(201).send(client);
-        // const client = req.body;
-        // console.log(client);
-        // await User.create();
+    },
+    delete: (req, res, next) => {
+        User.apagarPorId(req.params.id)
+        res.status(204).send("")
+    },
+    update: async (req, res, next) => {
+        let clienteDb = await User.buscaPorId(req.params.id)
+        if(!clienteDb) return res.status(404).send({mensagem: "Cliente não encontrado"})
+
+        const cliente = new User(req.body)
+        cliente.id = clienteDb.id
+        User.create(cliente)
+        res.status(200).send(cliente)
+    },
+    findById: async (req, res, next) => {
+        let clienteDb = await User.findById(req.params.id);
+        if(!clienteDb) return res.status(404).send({mensagem: "Usuário não encontrado"});
+        res.status(200).send(clienteDb);
     }
 }

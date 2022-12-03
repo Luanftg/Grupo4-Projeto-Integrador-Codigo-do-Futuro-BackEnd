@@ -1,20 +1,6 @@
 # Api Código do Futuro
 
-## Desafio
-
-Campos exigidos para as entidades:
-Produtos (id, nome, descricao, valor, qtd_estoque)
-Clientes (id, nome, telefone, email, cpf, cep, logradouro, numero, bairro, cidade, estado, complemento)
-Pedidos (id, cliente_id, valor_total, data)
-PedidosProdutos (id, pedido_id, produto_id, valor, quantidade)
-
-Persistência:
-Iremos gravar as informações em uma API Node.js com persistência em disco com arquivo.json (Conteúdo dado em aula no dia 23/11/2023) para isso devemos:
-Criar uma API em Node.js básica
-Fazer os CRUD's listados acima (Produtos, Clientes, Pedidos, PedidosProdutos) salvando os dados em arquivo.json
-Utilizar a API básica em Node.js na aplicação front-end (Angular)
-
-- `npm init`
+## Integrantes
 
 -nome: Ariel Rodrigues
 -nome: Guilherme Bonilha
@@ -22,9 +8,9 @@ Utilizar a API básica em Node.js na aplicação front-end (Angular)
 -nome: Sarah Cardoso
 -nome: Victor Pinheiro
 
-# Desafio Projeto Integrador Angular
+## Desafio
 
-_Visando melhorar de seus associados, como Farmarcas iremos desenvolver um sistema chamado Radar, onde o seu objetivo é gerenciar o Fluxo de caixa do lojista fazendo com que o mesmo tenha a possibilidade de fazer o gerenciamento do fluxo de entrada e saída do seu negócio_
+*Visando melhorar de seus associados, como Farmarcas iremos desenvolver um sistema chamado Radar, onde o seu objetivo é gerenciar o Fluxo de caixa do lojista fazendo com que o mesmo tenha a possibilidade de fazer o gerenciamento do fluxo de entrada e saída do seu negócio*
 
 **O sistema será desenvolvido em Angular com as seguintes funcionalidades.**
 
@@ -54,6 +40,22 @@ _Visando melhorar de seus associados, como Farmarcas iremos desenvolver um siste
 - Definição de responsável pelo card ou checklist de completude
 - Priorização dos cards (ex: tags com cores para maior relevância ou com títulos descritivos para nível de importância na priorização)
 
+Campos exigidos para as entidades:
+Produtos (id, nome, descricao, valor, qtd_estoque)
+Clientes (id, nome, telefone, email, cpf, cep, logradouro, numero, bairro, cidade, estado, complemento)
+Pedidos (id, cliente_id, valor_total, data)
+PedidosProdutos (id, pedido_id, produto_id, valor, quantidade)
+
+Persistência:
+Iremos gravar as informações em uma API Node.js com persistência em disco com arquivo.json (Conteúdo dado em aula no dia 23/11/2023) para isso devemos:
+Criar uma API em Node.js básica
+Fazer os CRUD's listados acima (Produtos, Clientes, Pedidos, PedidosProdutos) salvando os dados em arquivo.json
+Utilizar a API básica em Node.js na aplicação front-end (Angular)
+
+## Solução
+
+- `npm init`
+
 ## CRITÉRIOS DE AVALIAÇÃO
 
 - Itens mínimos para entrega
@@ -73,4 +75,3 @@ _Visando melhorar de seus associados, como Farmarcas iremos desenvolver um siste
 - [Link com informações do Projeto Integraor](https://docs.google.com/document/d/1t7k1-_LaiIV_jeNg0f1EuuDUcSINUSWQ/edit#)
 - [Repositório - Danilo](https://github.com/torneseumprogramador/codigo-do-futuro-api-fake)
 - [Torne-se um Programador - Async Await](https://www.torneseumprogramador.com.br/aula?id=3OalpxsCvTY&aula=101&tipo=back-end&professor=Danilo)
-# Teste de fluxo git

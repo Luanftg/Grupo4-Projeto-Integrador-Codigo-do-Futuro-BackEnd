@@ -1,74 +1,81 @@
 # Api Código do Futuro
 
-## Integrantes
-
--nome: Ariel Rodrigues
--nome: Guilherme Bonilha
--nome: Luan Fonseca
--nome: Sarah Cardoso
--nome: Victor Pinheiro
-
 ## Desafio
 
-*Visando melhorar de seus associados, como Farmarcas iremos desenvolver um sistema chamado Radar, onde o seu objetivo é gerenciar o Fluxo de caixa do lojista fazendo com que o mesmo tenha a possibilidade de fazer o gerenciamento do fluxo de entrada e saída do seu negócio*
+*Visando melhorar a experiência de seus associados, como Farmarcas iremos desenvolver um sistema chamado Radar, onde o seu objetivo é gerenciar o Fluxo de caixa do lojista fazendo com que o mesmo tenha a possibilidade de fazer o gerenciamento do fluxo de entrada e saída do seu negócio*
 
-**O sistema será desenvolvido em Angular com as seguintes funcionalidades.**
+*Persistência:
+Iremos gravar as informações em uma API Node.js com persistência em disco com arquivo.json para isso devemos:*
 
-- [ ] Pagina login
-- [ ] Página home
-- [ ] Página cadastro de produtos
-- [ ] Página cadastro de clientes
-- [ ] Página cadastro de pedidos dos clientes
-- [ ] Página de fluxo de caixa, mostrando a movimentação do mês
-
-## TECNOLOGIAS UTILIZADAS
-
-- HTML
-- CSS
-- Angular
-- REST API em Node.js
-- HttpClienteModule no Angular para Rest API
-
-## SUGESTÃO DE ORGANIZAÇÃO DO PROJETO
-
-- Elaboração do kanban com definição dos entregáveis
-- Elaboração do kanban (sugestão de utilização: Trello, Jira, etc)
-- Criação do backlog
-- Detalhamento descritivo das tarefas da squad dentro dos seus cards (e não apenas com títulos genéricos no card)
-- Formatação do kanban padrão "to do, doing, done"
-- Definição de data de entrega das tarefas nos cards
-- Definição de responsável pelo card ou checklist de completude
-- Priorização dos cards (ex: tags com cores para maior relevância ou com títulos descritivos para nível de importância na priorização)
-
-Campos exigidos para as entidades:
-Produtos (id, nome, descricao, valor, qtd_estoque)
-Clientes (id, nome, telefone, email, cpf, cep, logradouro, numero, bairro, cidade, estado, complemento)
-Pedidos (id, cliente_id, valor_total, data)
-PedidosProdutos (id, pedido_id, produto_id, valor, quantidade)
-
-Persistência:
-Iremos gravar as informações em uma API Node.js com persistência em disco com arquivo.json (Conteúdo dado em aula no dia 23/11/2023) para isso devemos:
-Criar uma API em Node.js básica
-Fazer os CRUD's listados acima (Produtos, Clientes, Pedidos, PedidosProdutos) salvando os dados em arquivo.json
-Utilizar a API básica em Node.js na aplicação front-end (Angular)
+- [x] Criar uma API em Node.js básica
+- [x] Fazer os CRUD's de Produtos, Clientes, Pedidos, PedidosProdutos, salvando os dados em arquivo.json.
 
 ## Solução
 
-- `npm init`
+- Abstração das classes **modelos**
 
-## CRITÉRIOS DE AVALIAÇÃO
+![Alt text](assets/APIREST_abstract.png)
 
-- Itens mínimos para entrega
-- Organização do projeto (Kanban no Trello, Jira ou outra ferramenta)
-- API básica em Node.js
-- Beleza e fluidez do layout:
-- Tela de login
-- Telas de cadastro e listagem dos produtos
-- Telas de cadastro e listagem dos usuários
-- Telas de cadastro e listagem dos pedidos
-- Telas de fluxo de caixa
-- Repositório do GIT
-- Fluidez na apresentação
+- Fluxo de implementação da **API-REST**
+
+![Alt text](assets/APIREST_routes.png)
+
+### EndPoints
+
+- [x] ``/products`` - **REFERENTE à** Produtos (id, nome, descricao, valor, qtd_estoque)
+  - [x] GET
+  - [x] POST
+- [x] ``/products/id`` - **REFERENTE à** Produtos (id, nome, descricao, valor, qtd_estoque)
+  - [x] PUT
+  - [x] DELETE
+- [x] ``users`` - **REFERENTE à** Clientes (id, nome, telefone, email, cpf, cep, logradouro, numero, bairro, cidade, estado e complemento)
+  - [x] GET
+  - [x] POST
+- [x] ``users/id`` - **REFERENTE à** Clientes (id, nome, telefone, email, cpf, cep, logradouro, numero, bairro, cidade, estado e complemento)
+  - [x] PUT
+  - [x] DELETE
+- [x] ``orders`` - **REFERENTE à** Pedidos (id, cliente_id, valor_total, data)
+  - [x] GET
+  - [x] POST
+- [x] ``orders/id`` - **REFERENTE à** Pedidos (id, cliente_id, valor_total, data)
+  - [x] PUT
+  - [x] DELETE
+- [x] ``ordersProduct`` - **REFERENTE à** PedidosProdutos (id, pedido_id, produto_id, valor, quantidade)
+  - [x] GET
+  - [x] POST
+- [x] ``ordersProduct/id`` - **REFERENTE à** PedidosProdutos (id, pedido_id, produto_id, valor, quantidade)
+  - [x] PUT
+  - [x] DELETE
+
+### Configurações do Projeto
+
+1. `npm init`
+2. `npm install`
+
+- **Dependências** utilizadas
+  - [cookie-parser]()
+  - [cors]()
+  - [debug]()
+  - [express]()
+  - [http-errors]()
+  - [morgan]()
+  - [nodemon]() **Dependência de desenvolvimento**
+
+3. criação dos scripts
+   - `npm run start`
+   - `npm run dev`
+
+## Testes
+
+- Foram desenvolvidas *Collections* no *Thunder Client* simulando as requisições http para os endPoints criados afim de testar o funcionamento esperado das requisições.
+
+## Integrantes
+
+- [Ariel Rodrigues](https://github.com/99arielsr)
+- [Guilherme Bonilha](https://github.com/bonilha-rogante)
+- [Luan Fonseca](https://github.com/Luanftg/)
+- [Victor Pinheiro](https://github.com/VictorPnheiro)
+- [Sarah Cardoso]()
 
 ### Referências
 

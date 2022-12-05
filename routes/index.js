@@ -3,6 +3,7 @@ const homeController = require('../controller/homeController');
 const usersController = require('../controller/usersController');
 const productController = require('../controller/productsController');
 const orderController = require('../controller/ordersController');
+const orderProductController = require('../controller/orderProductController');
 var router = express.Router();
 
 /* GET home page. */
@@ -25,5 +26,12 @@ router.post('/orders', orderController.create);
 router.get('/orders/:id', orderController.findById);
 router.delete('/orders/:id', orderController.delete);
 router.put('/orders/:id', orderController.update);
+
+router.get('/orderProducts', orderProductController.index);
+router.post('/orderProducts', orderProductController.create);
+router.get('/orderProducts/:id', orderProductController.findById);
+router.delete('/orderProducts/:id', orderProductController.delete);
+router.put('/orderProducts/:id', orderProductController.update);
+
 
 module.exports = router;

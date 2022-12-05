@@ -16,17 +16,17 @@ module.exports = {
         res.status(204).send("")
     },
     update: async (req, res, next) => {
-        let OorderProductDb = await OrderProduct.findById(req.params.id)
-        if(!OorderProductDb) return res.status(404).send({mensagem: "Pedido de produto não encontrado"})
+        let OrderProductDb = await OrderProduct.findById(req.params.id)
+        if(!OrderProductDb) return res.status(404).send({mensagem: "Pedido de produto não encontrado"})
 
         const OorderProduct = new OrderProduct(req.body)
-        OorderProduct.id = OorderProductDb.id
+        OorderProduct.id = OrderProductDb.id
         OrderProduct.create(OorderProduct)
         res.status(200).send(OorderProduct)
     },
     findById: async (req, res, next) => {
-        let OorderProductDb = await OrderProduct.findById(req.params.id);
-        if(!OorderProductDb) return res.status(404).send({mensagem: "Pedido de produto não encontrado"});
-        res.status(200).send(OorderProductDb);
+        let OrderProductDb = await OrderProduct.findById(req.params.id);
+        if(!OrderProductDb) return res.status(404).send({mensagem: "Pedido de produto não encontrado"});
+        res.status(200).send(OrderProductDb);
     }
 }

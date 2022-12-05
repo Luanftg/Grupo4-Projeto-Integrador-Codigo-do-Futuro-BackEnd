@@ -2,6 +2,7 @@ var express = require('express');
 const homeController = require('../controller/homeController');
 const usersController = require('../controller/usersController');
 const productController = require('../controller/productsController');
+const orderController = require('../controller/ordersController');
 const orderProductController = require('../controller/orderProductController');
 var router = express.Router();
 
@@ -19,6 +20,12 @@ router.post('/products', productController.create);
 router.get('/products/:id', productController.findById);
 router.delete('/products/:id', productController.delete);
 router.put('/products/:id', productController.update);
+
+router.get('/orders', orderController.index);
+router.post('/orders', orderController.create);
+router.get('/orders/:id', orderController.findById);
+router.delete('/orders/:id', orderController.delete);
+router.put('/orders/:id', orderController.update);
 
 router.get('/orderProducts', orderProductController.index);
 router.post('/orderProducts', orderProductController.create);

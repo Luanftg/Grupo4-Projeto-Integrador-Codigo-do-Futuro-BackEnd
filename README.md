@@ -12,6 +12,9 @@ Iremos gravar as informações em uma API Node.js com persistência em disco com
 
 ## Solução
 
+- **APRESENTAÇÃO** da API REST
+[API REST PROJETO RADAR](https://youtu.be/dSvrP981YzA)
+
 - Abstração das classes **modelos**
 
 ![Alt text](assets/APIREST_abstract.png)

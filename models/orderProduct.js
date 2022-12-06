@@ -1,12 +1,13 @@
 const fs = require('fs');
+const crypto = require('crypto');
 
 module.exports = class OrderProduct {
-    constructor(orderProduct){
-        this.id = orderProduct?.id
+    constructor(orderProduct) {
+        this.id = crypto.randomUUID();
         this.orderProductId = orderProduct?.orderProductId
         this.productId = orderProduct?.productId
         this.quantity = orderProduct?.quantity
-        this.value = orderProduct?.value    
+        this.value = orderProduct?.value
     }
     
 static async create(orderProduct) {

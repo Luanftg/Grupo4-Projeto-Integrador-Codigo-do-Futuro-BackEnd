@@ -1,12 +1,13 @@
 const fs = require('fs');
+const crypto = require('crypto');
 
 module.exports = class Product {
     constructor(product){
-        this.id = product?.id
+        this.id = crypto.randomUUID();
         this.name = product?.name
         this.description = product?.description
         this.price = product?.price
-        this.quantity = product?.quantity    
+        this.quantity = product?.quantity
     }
     
 static async create(product) {

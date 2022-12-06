@@ -1,4 +1,62 @@
-# Api Código do Futuro
+# API - PROJETO RADAR
+
+<div align="center"><h1> :computer: # Equipe: </h1></div>
+
+<table align="center">
+  <tr>
+    <td align="center">
+      <a href="https://github.com/99arielsr">
+        <img src="https://avatars.githubusercontent.com/u/95944401?v=4" width="100px;" alt="Foto do Ariel Rodrigues"/><br>
+        <sub>
+          <b>Ariel Rodrigues</b>
+        </sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/Dannytiveron">
+        <img src="https://avatars.githubusercontent.com/u/116685781?v=4" width="100px;" alt="Foto da Danielle Tiveron"/><br>
+        <sub>
+          <b>Danielle Tiveron</b>
+        </sub>
+      </a>
+    </td>
+     <td align="center">
+      <a href="https://github.com/bonilha-rogante">
+        <img src="https://avatars.githubusercontent.com/u/85463234?v=4" width="100px;" alt="Foto do Guilherme Bonilha"/><br>
+        <sub>
+          <b>Guilherme Bonilha</b>
+        </sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/Luanftg">
+        <img src="https://avatars.githubusercontent.com/u/51548623?v=4" width="100px;" alt="Foto do Luan Fonseca Torralbo Gimenez"/><br>
+        <sub>
+          <b>Luan F. T. Gimenez</b>
+        </sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/saa05">
+        <img src="https://avatars.githubusercontent.com/u/114499098?v=4" width="100px;" alt="Foto da Sarah Cardoso"/><br>
+        <sub>
+          <b>Sarah Cardoso</b>
+        </sub>
+      </a>
+    </td>
+      <td align="center">
+      <a href="https://github.com/VictorPnheiro">
+        <img src="https://avatars.githubusercontent.com/u/95004377?v=4" width="100px;" alt="Foto do Victor Pinheiro"/><br>
+        <sub>
+          <b>Victor Pinheiro</b>
+        </sub>
+      </a>
+    </td>
+  </tr>
+</table>
+
+<hr>
+
 
 ## Desafio
 
@@ -73,14 +131,6 @@ Iremos gravar as informações em uma API Node.js com persistência em disco com
 ## Testes
 
 - Foram desenvolvidas *Collections* no *Thunder Client* simulando as requisições http para os endPoints criados afim de testar o funcionamento esperado das requisições.
-
-## Integrantes
-
-- [Ariel Rodrigues](https://github.com/99arielsr)
-- [Guilherme Bonilha](https://github.com/bonilha-rogante)
-- [Luan Fonseca](https://github.com/Luanftg/)
-- [Victor Pinheiro](https://github.com/VictorPnheiro)
-- [Sarah Cardoso]()
 
 ### Referências
 

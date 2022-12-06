@@ -1,8 +1,9 @@
 const fs = require('fs');
+const crypto = require('crypto');
 
 module.exports = class User {
     constructor(cliente){
-        this.id = cliente?.id
+        this.id = crypto.randomUUID();
         this.name = cliente?.name
         this.telefone = cliente?.telefone
         this.email = cliente?.email

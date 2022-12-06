@@ -1,11 +1,12 @@
 const fs = require('fs');
+const crypto = require('crypto');
 
 module.exports = class Order {
     constructor(order){
-        this.id = order?.id
+        this.id = crypto.randomUUID();
         this.clientId = order?.clientId
         this.totalValue = order?.totalValue
-        this.date = order?.date  
+        this.date = new Date();
     }
     
 static async create(order) {
